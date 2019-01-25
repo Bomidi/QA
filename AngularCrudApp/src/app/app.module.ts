@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule} from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
 
@@ -24,6 +25,7 @@ import { EmployeeListComponent } from './employees/employee-list/employee-list.c
     AppRoutingModule,
     FormsModule,
     HttpModule,
+    BrowserAnimationsModule,
          ToastrModule.forRoot()
   ],
   providers: [],

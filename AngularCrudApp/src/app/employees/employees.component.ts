@@ -10,7 +10,7 @@ import { NgForm } from '@angular/forms'
 })
 export class EmployeesComponent implements OnInit {
 
-  constructor(private employeeService : EmployeeService) { }
+  constructor(public employeeService : EmployeeService) { }
 
   ngOnInit() {
   }

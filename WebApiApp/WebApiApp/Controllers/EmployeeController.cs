@@ -14,7 +14,7 @@ using System.Web.Http.ModelBinding;
 
 namespace WebApiApp.Controllers
 {
-    [EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class EmployeeController : ApiController
     {
         private DBModel db = new DBModel();
@@ -26,6 +26,7 @@ namespace WebApiApp.Controllers
         }
 
         // GET: api/Employee/5
+        [HttpGet]
         [ResponseType(typeof(ImpactTempTable))]
         public IHttpActionResult GetImpactTempTable(int id)
         {
@@ -39,7 +40,8 @@ namespace WebApiApp.Controllers
         }
 
         // PUT: api/Employee/5
-        [ResponseType(typeof(void))]
+        [HttpPut]
+       [ResponseType(typeof(void))]
         public IHttpActionResult PutImpactTempTable(int id, ImpactTempTable impactTempTable)
         {
             if (!ModelState.IsValid)
@@ -74,6 +76,7 @@ namespace WebApiApp.Controllers
         }
 
         // POST: api/Employee
+        [HttpPost]
         [ResponseType(typeof(ImpactTempTable))]
         public IHttpActionResult PostImpactTempTable(ImpactTempTable impactTempTable)
         {
@@ -92,6 +95,7 @@ namespace WebApiApp.Controllers
         }
 
         // DELETE: api/Employee/5
+        [HttpDelete]
         [ResponseType(typeof(ImpactTempTable))]
         public IHttpActionResult DeleteImpactTempTable(int id)
         {

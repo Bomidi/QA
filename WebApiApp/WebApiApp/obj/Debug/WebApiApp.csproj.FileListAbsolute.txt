@@ -61,3 +61,4 @@ C:\Users\Ramanareddy\Downloads\WebApiApp\WebApiApp\WebApiApp\bin\roslyn\vbc.exe.
 C:\Users\Ramanareddy\Downloads\WebApiApp\WebApiApp\WebApiApp\bin\roslyn\vbc.rsp
 C:\Users\Ramanareddy\Downloads\WebApiApp\WebApiApp\WebApiApp\bin\roslyn\VBCSCompiler.exe
 C:\Users\Ramanareddy\Downloads\WebApiApp\WebApiApp\WebApiApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ramanareddy\Downloads\WebApiApp\WebApiApp\WebApiApp\obj\Debug\WebApiApp.csprojAssemblyReference.cache

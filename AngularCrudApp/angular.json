@@ -20,7 +20,9 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/web.config"
+              
             ],
             "styles": [
               "src/styles.css"
@@ -51,8 +53,33 @@
                   "maximumError": "5mb"
                 }
               ]
+            },
+            "QA":{
+            "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.QA.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
             }
           }
+          
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
@@ -62,6 +89,9 @@
           "configurations": {
             "production": {
               "browserTarget": "AngularCrudApp:build:production"
+            },
+            "QA": {
+              "browserTarget": "AngularCrudApp:build:QA"
             }
           }
         },

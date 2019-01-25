@@ -12,7 +12,7 @@ import { NgForm } from '@angular/forms/src/directives/ng_form';
 })
 export class EmployeeComponent implements OnInit {
 
-  constructor(private employeeService: EmployeeService, private toastr: ToastrService) { }
+  constructor(public employeeService: EmployeeService, public toastr: ToastrService) { }
 
   ngOnInit() {
     this.resetForm();
