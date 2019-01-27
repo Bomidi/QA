@@ -8,7 +8,7 @@ import {environment} from '../environments/environment';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export clas AppComponent {
  // title = 'AngularCrudApp';
   NameEnv=environment.envName;
 }
